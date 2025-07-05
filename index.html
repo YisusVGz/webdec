@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me dijeron que puedo ver el futuro 🔮</title>
+<style>
+body {display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 100vh; font-family: sans-serif; background: linear-gradient(to bottom right, #ffe0f0, #e0f7fa); margin: 0; text-align: center; padding: 20px;}
+h1 {font-size: 2em; margin: 20px;}
+button {padding: 10px 20px; font-size: 1em; border: none; border-radius: 8px; cursor: pointer; background-color: #ff80ab; color: white; transition: background-color 0.3s; margin-top: 10px;}
+button:active {background-color: #ff4081;}
+.reveal {opacity: 0; max-height: 0; overflow: hidden; transition: opacity 0.8s ease, max-height 0.8s ease;}
+.reveal.show {opacity: 1; max-height: 2000px;}
+#mensaje, #mensaje2, #mensaje3, #mensaje4 {margin-top: 20px; padding: 15px; background: white; border-radius: 10px; max-width: 320px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;}
+ul {text-align: left; padding-left: 20px;}
+img {max-width: 100%; border-radius: 10px; margin-top: 10px;}
+iframe {width: 100%; height: 500px; border: none; border-radius: 10px; margin-top: 10px;}
+</style>
+</head>
+<body>
+<h1>Me dijeron que puedo ver el futuro 🔮</h1>
+<button id="btn1">¿Tú qué dices?</button>
+<div id="mensaje" class="reveal">
+  <strong>¿Seré digno?</strong><br><br>
+  <img src="https://img.wattpad.com/448d1cae004cba21daedf8ab987dc4827d92c201/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f67496e5f7472784e704c546c43513d3d2d313232373431363535382e313666306530303031313836643465633235303035383232373431302e676966" alt="Thor levantando el martillo gif"><br><br>
+  <button id="btn2">¿He entendido las cosas correctamente?</button>
+</div>
+<div id="mensaje2" class="reveal">
+  ¿Sabes? Quizá me pueda equivocar... pero me dijeron por ahí que las oportunidades se dan, quizá en esta oportunidad podemos:
+  <ul>
+    <li>Ir por múltiples cafés para platicar de nosotros ☕</li>
+    <li>Conocer nuevos lugares para nuestras comidas de elección por sorteo 🎬</li>
+    <li>Armar nuestro lego pendiente 🌅</li>
+    <li>Colorear contigo 🎨</li>
+    <li>Darte 2 horas diarias de quejas gratis 💪</li>
+    <li>Y crear unas cuantas buenas historias juntos que contar 🎈</li>
+  </ul>
+  <button id="btn3">❓</button>
+</div>
+<div id="mensaje3" class="reveal">
+  Así que... ¿Te gustaría intentarlo juntos? ❤️<br><br>
+  <button id="btn4">❓</button>
+</div>
+<div id="mensaje4" class="reveal">
+  <iframe src="https://www.tiktok.com/embed/v2/7521975918538296632" allowfullscreen></iframe>
+</div>
+<script>
+function showElement(id) {
+  document.getElementById(id).classList.add('show');
+}
+document.getElementById('btn1').addEventListener('click', function() { showElement('mensaje'); });
+document.getElementById('btn2').addEventListener('click', function() { showElement('mensaje2'); });
+document.getElementById('btn3').addEventListener('click', function() { showElement('mensaje3'); });
+document.getElementById('btn4').addEventListener('click', function() { showElement('mensaje4'); });
+</script>
+</body>
+</html>
